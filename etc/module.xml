@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <!-- Hyva_SmileElasticsuite must load first so our layout updates on the
+         same handles are merged after its own. -->
+    <module name="Slova_HyvaElasticsuiteCompat">
+        <sequence>
+            <module name="Magento_Swatches"/>
+            <module name="Hyva_Theme"/>
+            <module name="Hyva_SmileElasticsuite"/>
+        </sequence>
+    </module>
+</config>

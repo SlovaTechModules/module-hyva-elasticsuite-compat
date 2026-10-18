@@ -1,0 +1,34 @@
+{
+    "name": "slova/module-hyva-elasticsuite-compat",
+    "description": "Fixes for hyva-themes/magento2-smile-elasticsuite on Hyvä 1.5+: restores the Hyvä 1.5 configurable swatch renderer on category listings.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "keywords": [
+        "magento2",
+        "hyva",
+        "elasticsuite",
+        "swatches"
+    ],
+    "authors": [
+        {
+            "name": "Slova (Carusel Multimedia SRL)",
+            "homepage": "https://github.com/SlovaTechModules"
+        }
+    ],
+    "require": {
+        "php": "~8.3.0||~8.4.0",
+        "magento/framework": "^103.0.8",
+        "magento/module-swatches": "^100.4.8",
+        "hyva-themes/magento2-default-theme": "^1.5",
+        "hyva-themes/magento2-smile-elasticsuite": "^1.2"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Slova\\HyvaElasticsuiteCompat\\": ""
+        }
+    }
+}

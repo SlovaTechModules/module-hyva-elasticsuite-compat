@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Hyva_SmileElasticsuite 1.2.8 swaps in its own listing renderer, a pre-1.5 copy
+             that renders product.swatch.item without "option" data. Hyvä 1.5 swatch-item.phtml
+             throws on that, breaking every category with a configurable product. Point the
+             block back at the Hyvä 1.5 template; Elasticsuite's swatch helper is wired via
+             di.xml, not the template, so nothing Elasticsuite-specific is lost. -->
+        <referenceBlock name="category.product.type.details.renderers.configurable"
+                        template="Magento_Swatches::product/listing/renderer.phtml"/>
+    </body>
+</page>
