@@ -1,7 +1,7 @@
 <?php
 /**
  * Slova_HyvaElasticsuiteCompat — fixes for Hyva_SmileElasticsuite on Hyvä 1.5+.
- * Copyright © Slova. All rights reserved.
+ * Copyright © Slova. Licensed under the MIT License, see LICENSE.
  */
 
 declare(strict_types=1);
