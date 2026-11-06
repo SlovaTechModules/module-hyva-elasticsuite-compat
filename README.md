@@ -24,3 +24,40 @@ effect.
 
 **Remove this module** once a `hyva-themes/magento2-smile-elasticsuite` release
 ships a 1.5-compatible listing renderer.
+
+## Requirements
+
+| | |
+|---|---|
+| Magento Open Source | 2.4.8 |
+| Hyvä Theme | 1.5 or newer |
+| `hyva-themes/magento2-smile-elasticsuite` | 1.2 – 1.2.8 |
+| PHP | 8.3 – 8.4 |
+
+The module is a single layout file: no PHP classes, no database tables, no settings.
+
+## Installation
+
+```bash
+composer require slova/module-hyva-elasticsuite-compat
+bin/magento module:enable Slova_HyvaElasticsuiteCompat
+bin/magento setup:upgrade
+bin/magento cache:flush
+```
+
+Open a category with a configurable product: it renders, with its swatches.
+
+## Uninstalling
+
+When the Hyvä ElasticSuite module ships its own fix:
+
+```bash
+bin/magento module:disable Slova_HyvaElasticsuiteCompat
+composer remove slova/module-hyva-elasticsuite-compat
+bin/magento setup:upgrade
+bin/magento cache:flush
+```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
