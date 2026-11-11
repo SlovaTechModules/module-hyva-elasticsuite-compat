@@ -58,6 +58,8 @@ bin/magento setup:upgrade
 bin/magento cache:flush
 ```
 
-## License
+## Support and license
 
-MIT, see [LICENSE](LICENSE).
+Bugs and questions: open an issue on [GitHub](https://github.com/SlovaTechModules/module-hyva-elasticsuite-compat/issues), or write to [contact@slova.tech](mailto:contact@slova.tech). Installation and setup by us, if you prefer: [slova.tech/modules/hyva-elasticsuite-compat](https://slova.tech/modules/hyva-elasticsuite-compat/).
+
+MIT — see [LICENSE](LICENSE). © 2026 Carusel Multimedia SRL, trading as Slova.
